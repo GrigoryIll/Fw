@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Куртки
+{% endblock %}
+
+{% block content %}
+<h1>Модели курток</h1>
+<img src="https://avatars.mds.yandex.net/i?id=7a0e5afe31eed9702a9b258302df918456c61e9c-9849134-images-thumbs&n=13">
+<table>
+    <tr>
+        <th>Номер модели</th>
+        <th>Размер</th>
+        <th>Цвет</th>
+    </tr>
+    {% for jacket in jackets %}
+    <tr>
+        <td>{{ jacket.id }}</td>
+        <td>{{ jacket.size }}</td>
+        <td>{{ jacket.color }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
