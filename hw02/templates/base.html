@@ -1,0 +1,35 @@
+<html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+        {% block title %}
+        Аутентификация
+        {% endblock %}
+    </title>
+</head>
+
+<body>
+    {% block header %}
+    <h1>Аутентификация</h1>
+    {% endblock %}
+    {% block content %}
+    <form class="form_auth_style" action="#" method="post">
+        <label>Введите Ваше имя</label>
+        <input type="text" name="name" placeholder="Введите Ваше имя" required>
+        <label>Введите Ваш пароль</label>
+        <input type="email" name="email" placeholder="Введите ваш имейл" required>
+        <button class="form_auth_button" type="submit" name="form_auth_submit">Войти</button>
+    </form>
+    {% endblock %}
+
+    {% block footer %}
+    <hr>Все права защищены &copy
+    {% endblock %}
+
+</body>
+
+
+</html>
