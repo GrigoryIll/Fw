@@ -18,7 +18,7 @@ class TaskIn(BaseModel):
     status: str
 
 @app.get("/tasks}", response_model=list[Task])
-async def tasks():
+async def get_tasks():
     return tasks
 
 @app.get("/tasks/{id}", response_model=Task)
